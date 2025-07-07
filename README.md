@@ -2,6 +2,14 @@
 This project enables analysis and manipulation of a [US Crude Oil Imports](https://www.kaggle.com/datasets/alistairking/u-s-crude-oil-imports) dataset.
 The project includes scripts for loading data into a postgres table, and exposes crud operations through an API. 
 
+## Table of contents
+[Installation and Setup](#installation-and-setup)  
+[Data description](#data-description)  
+[Endpoints](#endpionts)  
+[Creating a virtual environment with pipenv](#creating-a-virtual-environment-with-pipenv)  
+[Scripts](#scripts)  
+[Sources](#sources)  
+
 ## Installation and Setup:
 ### Requirements
 1. [Python](https://www.python.org/downloads/)
@@ -103,7 +111,8 @@ The project includes scripts for loading data into a postgres table, and exposes
     - Retrieve the record associated with the provided record_id
 - Path params:
     - record_id: integer, required
-- Response is in the format of [response record](#response-record-schema)
+- Response:
+    - [response record](#response-record-schema): record matching record_id
 
 #### PUT /imports/update/<record_id>
 - Summary:
@@ -133,7 +142,7 @@ The project includes scripts for loading data into a postgres table, and exposes
     ```python
     >>> pipenv shell
     ```
-- Install required libraries for the project from requirements.txt or Pipfile
+- Install required libraries for the project from requirements.txt *or* Pipfile
     ```
     # Pipfile
     >>> pipenv install
