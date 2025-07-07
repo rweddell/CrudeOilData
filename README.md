@@ -5,7 +5,7 @@ The project includes scripts for loading data into a postgres table, and exposes
 ## Table of contents
 [Installation and Setup](#installation-and-setup)  
 [Data description](#data-description)  
-[Endpoints](#endpionts)  
+[Endpoints](#endpoints)  
 [Creating a virtual environment with pipenv](#creating-a-virtual-environment-with-pipenv)  
 [Scripts](#scripts)  
 [Sources](#sources)  
